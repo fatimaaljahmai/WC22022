@@ -1,7 +1,7 @@
 @font-face
 {
-	font-family: ABEAKRG;
-	src: url('ABEAKRG.TTF');
+	font-family: abeakrg;
+	src: url('abeakrg.ttf');
 } 
 
 body
@@ -13,7 +13,7 @@ body
 	-moz-user-select: none;
 	-ms-user-select: none;
 	
-	font-family: ABEAKRG;
+	font-family: abeakrg;
 	cursor: default;
 }
 
