@@ -6,9 +6,6 @@ var canSwitch = true;
 
 function slideshow()
 {
-	
-	
-	
 	var slides = document.getElementsByClassName("slide");
 	
 	if(currentSlide > slides.length || currentSlide < 0)
@@ -22,8 +19,8 @@ function slideshow()
 		nextSlide = 0;
 	}
 	
-	slides[currentSlide].style.animation = "fade-out 3s forwards";
-	slides[nextSlide].style.animation = "fade-in 3s forwards";
+	slides[currentSlide].style.animation = "fade-out 1s forwards";
+	slides[nextSlide].style.animation = "fade-in 1s forwards";
 	
 	var dots = document.getElementsByClassName("dot");
 	dots[currentSlide].style.opacity = "0.5";
@@ -33,7 +30,7 @@ function slideshow()
 	currentSlide = nextSlide;
 	
 	canSwitch = false;
-	setTimeout(function(){ canSwitch = true; }, 3000);
+	setTimeout(function(){ canSwitch = true; }, 1000);
 }
 
 function switchToSlide(slide)
@@ -55,8 +52,8 @@ function switchToSlide(slide)
 		nextSlide = 0;
 	}
 	
-	slides[currentSlide].style.animation = "fade-out 3s forwards";
-	slides[nextSlide].style.animation = "fade-in 3s forwards";
+	slides[currentSlide].style.animation = "fade-out 1s forwards";
+	slides[nextSlide].style.animation = "fade-in 1s forwards";
 	
 	var dots = document.getElementsByClassName("dot");
 	dots[currentSlide].style.opacity = "0.5";
@@ -67,5 +64,5 @@ function switchToSlide(slide)
 	timer = setInterval(slideshow, 10000);
 	
 	canSwitch = false;
-	setTimeout(function(){ canSwitch = true; }, 3000);
+	setTimeout(function(){ canSwitch = true; }, 1000);
 }

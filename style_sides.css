@@ -84,7 +84,7 @@ body
 	height: 315px;
 }
 
-#window
+.window, .popup
 {
 	align-self: center;
 	-webkit-align-self: center;
@@ -94,14 +94,51 @@ body
 	height: 315px;
 	color: white;
 	font-size: 22pt;
-	display: flex;
-	display: -webkit-flex;
-	align-items: center;
-	-webkit-align-items: center;
-	justify-content: center;
-	-webkit-justify-content: center;
-	line-height: 40pt;
 	background-color: rgb(108, 29, 56);
+	cursor: pointer;
+}
+
+#popup-window a {
+	transition: background-color 0.6s;
+	background-color: rgb(108, 29, 56);
+}
+
+#popup-window a:hover {
+	background-color: gray;
+}
+
+.window {
+	line-height: 79px;
+}
+
+.window *, .popup * {
+	display: block;
+}
+
+.popup {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	-webkit-display: flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	
+	position: absolute;
+	display: none;
+	z-index: 1;
+	
+	overflow-y: scroll;
+}
+
+.popup p {
+	font-size: 15pt;
+	padding: 2vh 5vh 5vh 5vh;
+}
+
+.popup h3 {
+	margin: 5vh 0px 2vh 0px;
 }
 
 #header

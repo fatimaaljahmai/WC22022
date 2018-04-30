@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title> World Cup 2022 - The Bid </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style_sides.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
@@ -21,11 +22,32 @@
 			</div>
 			
 			<div id="inner-content" class="centered container">
-				<div id="window">
-					THE COUNTRY<br/>
-					WORLD CUP<br/>
-					THE FILE<br/>
-					THE WORLD<br/>
+			
+				<div class="window" id="popup-window">
+					<a onclick="popup(1)">THE COUNTRY</a>
+					<a onclick="popup(2)">WORLD CUP</a>
+					<a onclick="popup(3)">THE FILE</a>
+					<a onclick="popup(4)">THE WORLD</a>
+				</div>
+				
+				<div class="popup" id="popup1">
+					<h3>The Country</h3>
+					<p>The peninsula of Qatar was originally an important pearling and trading settlement off the Persian Gulf. In the 1700’s, it was but a small village for fisherman and pearlers. In the mid 1900’s, oil reserves were discovered on the mainland, allowing the expansion and modernization of Qatar’s infrastructure. By 1971, Qatar declared independence from its British counterpart, and became one of the smallest countries in the world. With the country’s increasing oil revenues, migration increased to the area and established a solid work force. In 2006, Qatar became the first Arab country to ever host the 2006 Asian Games.</p>
+				</div>
+				
+				<div class="popup" id="popup2">
+					<h3>World Cup 2022</h3>
+					<p>Despite the success of Qatar hosting the Asian Games, many critics were against the idea of the 2022 FIFA World Cup being held in Doha, Qatar’s capital city. In the early 2000’s, Qatar began to really modernize their city, and overall way of life. The progress that Doha has made in such a little amount of time is remarkable, featuring a futuristic skyline and man-made island. The country has also been known to take an extreme liking to sporting events, specially football. When Qatar submitted their bid for the 2022 World Cup, they listed many of these achievements as reasons why they deserve to be the host. They also argued their bid was an effective way to bridge the gap between the Arab nations and the Westernized world.</p>
+				</div>
+				
+				<div class="popup" id="popup3">
+					<h3>The File</h3>
+					<p>Qatar won the bid to host the 2022 World Cup in 2010, and shortly after they begun their projects to host an overwhelming number of tourists. They constructed some of the most cutting edge soccer stadiums that the world has ever seen. It is estimated their bill for the infrastructure renovations in preparing for the World Cup will cost the country between 8 and 10 Billion USD. Qatar’s commitment to the project has never been questioned, as they have displayed their desire to be the best host the world has ever seen. However, controversies broke out over whether Qatar deserved to win the bid, or if bribery and corruption played a part. It is obvious that Doha would land some sort of allegations that they paid their way to win the bid, simply because the country has so much money. Evidence was never sufficient to back up these claims. </p>
+				</div>
+				
+				<div class="popup" id="popup4">
+					<h3>The World</h3>
+					<p>Qatar will continue their construction and renovations projects, in order to be the most generous host they can be. The world, however, seems still reluctant to accept the fact that they won. Instead of seeing it as a “bridge the gap” situation, many have lashed out against the country, saying the culture cannot handle so many foreigners. Qatar is the safest country in the world, according to crime statistics, so these claims are unwarranted too. The rest of the world has expressed their disapproval of Qatar’s hosting in many ways. Many European nations have lashed out saying that Qatar is lucky for their oil reserves; otherwise they would never be able to host the tournament. Sadly, Qatar does not have as many supporters as they would have liked. However, the Qatari government optimistically sees this still as a way to gain popularity with the rest of the world. They are determined to prove their country is safe and all cultures are respected, along with showing off their affluent hosting practices.</p>
 				</div>
 			</div>
 			
@@ -48,6 +70,7 @@
 		</div>
 		
 		<script src="behaviour_menu.js"></script>
+		<script src="behaviour_popup.js"></script>
 		
 	</body>
 	
